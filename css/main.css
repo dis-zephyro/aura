@@ -397,6 +397,12 @@ html {
   position: relative;
   margin-bottom: 20px;
 }
+.block05 .showcase .showcase-img .male-img {
+  display: block;
+}
+.block05 .showcase .showcase-img .female-img {
+  display: none;
+}
 .block05 .showcase .showcase-img .showcase-present {
   top: 0;
   left: 100px;
@@ -554,6 +560,12 @@ html {
 }
 .block05 .showcase.showcase-female .showcase-img .showcase-present {
   background-position: 0 -125px;
+}
+.block05 .showcase.showcase-female .showcase-img .male-img {
+  display: none;
+}
+.block05 .showcase.showcase-female .showcase-img .female-img {
+  display: block;
 }
 .block05 .showcase.showcase-female .btn-order {
   background: #f88dc6;

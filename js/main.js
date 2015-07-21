@@ -21,7 +21,7 @@ $(document).ready(function() {
 
 // Модальное окно
 
-$(".btn-callback, .btn-popup").fancybox({
+$(".btn-callback, .btn-popup, .link-sert").fancybox({
     "padding" : 0
 });
 
@@ -41,17 +41,6 @@ $('.radio-female').click(function() {
     console.log('showcase-female add');
 });
 
-/*
-function getFotm() {
-    var place = $(this).closest('.showcase');
-    var gender = place.find('input[type="radio"]:checked');
-    var genderValue = gender.val();
-
-    console.log(place);
-    console.log(gender);
-    console.log(genderValue);
-}
-*/
 
 $('.btn-order').click(function(event) {
     event.preventDefault();
