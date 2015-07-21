@@ -10,6 +10,7 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
         <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="js/vendor/jquery.fancybox/jquery.fancybox.css">
         <link rel="stylesheet/less" href="less/main.less">
         <script src="js/vendor/less.min.js"></script>
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
@@ -147,7 +148,376 @@
         </section>
         <section class="block05">
             <div class="container">
+                <h2>Наши матрасы</h2>
 
+                <!-- Матрас Солнышко -->
+                <div class="showcase">
+                    <form class="showcase-form clearfix">
+                        <div class="showcase-left">
+                            <div class="showcase-img">
+                                <img class="male-img" src="img/product/solnyshko.jpg" alt="">
+                                <span class="showcase-present"></span>
+                            </div>
+                            <div class="gender">
+                                <div class="gender-title">Выберите пол ребенка:</div>
+                                <div class="clearfix"></div>
+                                <input id="radio11"  type="radio" name="gender" value="мальчика" checked>
+                                <label for="radio11" class="radio-male">для мальчика</label>
+                                <input id="radio12" type="radio" name="gender" value="девочка">
+                                <label for="radio12"class="radio-female" >для девочки</label>
+                            </div>
+                        </div>
+                        <div class="showcase-right">
+                            <div class="showcase-title clearfix">
+                                <div class="left-col">
+                                    <h4>Солнышко</h4>
+                                    <p>Высота матраса: <span>12см</span></p>
+                                </div>
+                                <div class="right-col">Размеры(см):<span>90x120; 60x100</span></div>
+                            </div>
+                            <div class="showcase-material">
+                                <span class="material-title">Используемые материалы:</span>
+                                <ul class="clearfix">
+                                    <li>
+                                        <span>Кокосовая койра</span>
+                                        <img class="material-img" src="img/icon-cocos.png" alt="">
+                                    </li>
+                                    <li>
+                                        <span>Натуральный латекс</span>
+                                        <img class="material-img" src="img/icon-latex.png" alt="">
+                                    </li>
+                                    <li>
+                                        <span>Би кокос</span>
+                                        <img class="material-img" src="img/icon-bicos.png" alt="">
+                                    </li>
+                                    <li>
+                                        <span>Бязь</span>
+                                        <img class="material-img" src="img/icon-bjaz.png" alt="">
+                                    </li>
+                                    <li>
+                                        <span>Холофайбер</span>
+                                        <img class="material-img" src="img/icon-holofajber.png" alt="">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="showcase-description">Двусторонний матрасс, изготовлен без применения клея.Иногда
+                                текст-«рыба» также используется композиторами при написании музыки.
+                            </div>
+                            <div class="clearfix">
+                                <div class="price"><span>Цена:</span> 2300 руб.</div>
+                                <button type="submit" class="btn btn-order">Заказать матрас</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Матрас Лапушка -->
+                <div class="showcase showcase-female">
+                    <form class="showcase-form clearfix">
+                        <div class="showcase-left">
+                            <div class="showcase-img">
+                                <img class="male-img" src="img/product/lapushka.jpg" alt="">
+                                <span class="showcase-present"></span>
+                            </div>
+                            <div class="gender">
+                                <div class="gender-title">Выберите пол ребенка:</div>
+                                <div class="clearfix"></div>
+                                <input id="radio21"  type="radio" name="gender" value="мальчика">
+                                <label for="radio21" class="radio-male">для мальчика</label>
+                                <input id="radio22" type="radio" name="gender" value="девочка" checked>
+                                <label for="radio22"class="radio-female" >для девочки</label>
+                            </div>
+                        </div>
+                        <div class="showcase-right">
+                            <div class="showcase-title clearfix">
+                                <div class="left-col">
+                                    <h4>Лапушка</h4>
+                                    <p>Высота матраса: <span>12см</span></p>
+                                </div>
+                                <div class="right-col">Размеры(см):<span>90x120; 60x100</span></div>
+                            </div>
+                            <div class="showcase-material">
+                                <span class="material-title">Используемые материалы:</span>
+                                <ul class="clearfix">
+                                    <li>
+                                        <span>Кокосовая койра</span>
+                                        <img class="material-img" src="img/icon-cocos.png" alt="">
+                                    </li>
+                                    <li>
+                                        <span>Натуральный латекс</span>
+                                        <img class="material-img" src="img/icon-latex.png" alt="">
+                                    </li>
+                                    <li>
+                                        <span>Би кокос</span>
+                                        <img class="material-img" src="img/icon-bicos.png" alt="">
+                                    </li>
+                                    <li>
+                                        <span>Бязь</span>
+                                        <img class="material-img" src="img/icon-bjaz.png" alt="">
+                                    </li>
+                                    <li>
+                                        <span>Холофайбер</span>
+                                        <img class="material-img" src="img/icon-holofajber.png" alt="">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="showcase-description">Двусторонний матрасс, изготовлен без применения клея.Иногда
+                                текст-«рыба» также используется композиторами при написании музыки.
+                            </div>
+                            <div class="clearfix">
+                                <div class="price"><span>Цена:</span> 2300 руб.</div>
+                                <button type="submit" class="btn btn-order">Заказать матрас</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Матрас Жемчужинка -->
+                <div class="showcase">
+                    <form class="showcase-form clearfix">
+                        <div class="showcase-left">
+                            <div class="showcase-img">
+                                <img class="male-img" src="img/product/zhemchuzhinka.jpg" alt="">
+                                <span class="showcase-present"></span>
+                            </div>
+                            <div class="gender">
+                                <div class="gender-title">Выберите пол ребенка:</div>
+                                <div class="clearfix"></div>
+                                <input id="radio31"  type="radio" name="gender" value="мальчика" checked>
+                                <label for="radio31" class="radio-male">для мальчика</label>
+                                <input id="radio32" type="radio" name="gender" value="девочка">
+                                <label for="radio32"class="radio-female" >для девочки</label>
+                            </div>
+                        </div>
+                        <div class="showcase-right">
+                            <div class="showcase-title clearfix">
+                                <div class="left-col">
+                                    <h4>Жемчужинка</h4>
+                                    <p>Высота матраса: <span>12см</span></p>
+                                </div>
+                                <div class="right-col">Размеры(см):<span>90x120; 60x100</span></div>
+                            </div>
+                            <div class="showcase-material">
+                                <span class="material-title">Используемые материалы:</span>
+                                <ul class="clearfix">
+                                    <li>
+                                        <span>Кокосовая койра</span>
+                                        <img class="material-img" src="img/icon-cocos.png" alt="">
+                                    </li>
+                                    <li>
+                                        <span>Натуральный латекс</span>
+                                        <img class="material-img" src="img/icon-latex.png" alt="">
+                                    </li>
+                                    <li>
+                                        <span>Би кокос</span>
+                                        <img class="material-img" src="img/icon-bicos.png" alt="">
+                                    </li>
+                                    <li>
+                                        <span>Бязь</span>
+                                        <img class="material-img" src="img/icon-bjaz.png" alt="">
+                                    </li>
+                                    <li>
+                                        <span>Холофайбер</span>
+                                        <img class="material-img" src="img/icon-holofajber.png" alt="">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="showcase-description">Двусторонний матрасс, изготовлен без применения клея.Иногда
+                                текст-«рыба» также используется композиторами при написании музыки.
+                            </div>
+                            <div class="clearfix">
+                                <div class="price"><span>Цена:</span> 2300 руб.</div>
+                                <button type="submit" class="btn btn-order">Заказать матрас</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Матрас Чудо -->
+                <div class="showcase showcase-female">
+                    <form class="showcase-form clearfix">
+                        <div class="showcase-left">
+                            <div class="showcase-img">
+                                <img class="male-img" src="img/product/chudo.jpg" alt="">
+                                <span class="showcase-present"></span>
+                            </div>
+                            <div class="gender">
+                                <div class="gender-title">Выберите пол ребенка:</div>
+                                <div class="clearfix"></div>
+                                <input id="radio41"  type="radio" name="gender" value="мальчика">
+                                <label for="radio41" class="radio-male">для мальчика</label>
+                                <input id="radio42" type="radio" name="gender" value="девочка" checked>
+                                <label for="radio42"class="radio-female" >для девочки</label>
+                            </div>
+                        </div>
+                        <div class="showcase-right">
+                            <div class="showcase-title clearfix">
+                                <div class="left-col">
+                                    <h4>Чудо</h4>
+                                    <p>Высота матраса: <span>12см</span></p>
+                                </div>
+                                <div class="right-col">Размеры(см):<span>90x120; 60x100</span></div>
+                            </div>
+                            <div class="showcase-material">
+                                <span class="material-title">Используемые материалы:</span>
+                                <ul class="clearfix">
+                                    <li>
+                                        <span>Кокосовая койра</span>
+                                        <img class="material-img" src="img/icon-cocos.png" alt="">
+                                    </li>
+                                    <li>
+                                        <span>Натуральный латекс</span>
+                                        <img class="material-img" src="img/icon-latex.png" alt="">
+                                    </li>
+                                    <li>
+                                        <span>Би кокос</span>
+                                        <img class="material-img" src="img/icon-bicos.png" alt="">
+                                    </li>
+                                    <li>
+                                        <span>Бязь</span>
+                                        <img class="material-img" src="img/icon-bjaz.png" alt="">
+                                    </li>
+                                    <li>
+                                        <span>Холофайбер</span>
+                                        <img class="material-img" src="img/icon-holofajber.png" alt="">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="showcase-description">Двусторонний матрасс, изготовлен без применения клея.Иногда
+                                текст-«рыба» также используется композиторами при написании музыки.
+                            </div>
+                            <div class="clearfix">
+                                <div class="price"><span>Цена:</span> 2300 руб.</div>
+                                <button type="submit" class="btn btn-order">Заказать матрас</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Матрас Сокровище -->
+                <div class="showcase">
+                    <form class="showcase-form clearfix">
+                        <div class="showcase-left">
+                            <div class="showcase-img">
+                                <img class="male-img" src="img/product/sokrovishhe.jpg" alt="">
+                                <span class="showcase-present"></span>
+                            </div>
+                            <div class="gender">
+                                <div class="gender-title">Выберите пол ребенка:</div>
+                                <div class="clearfix"></div>
+                                <input id="radio51"  type="radio" name="gender" value="мальчика" checked>
+                                <label for="radio51" class="radio-male">для мальчика</label>
+                                <input id="radio52" type="radio" name="gender" value="девочка">
+                                <label for="radio52"class="radio-female" >для девочки</label>
+                            </div>
+                        </div>
+                        <div class="showcase-right">
+                            <div class="showcase-title clearfix">
+                                <div class="left-col">
+                                    <h4>Сокровище</h4>
+                                    <p>Высота матраса: <span>12см</span></p>
+                                </div>
+                                <div class="right-col">Размеры(см):<span>90x120; 60x100</span></div>
+                            </div>
+                            <div class="showcase-material">
+                                <span class="material-title">Используемые материалы:</span>
+                                <ul class="clearfix">
+                                    <li>
+                                        <span>Кокосовая койра</span>
+                                        <img class="material-img" src="img/icon-cocos.png" alt="">
+                                    </li>
+                                    <li>
+                                        <span>Натуральный латекс</span>
+                                        <img class="material-img" src="img/icon-latex.png" alt="">
+                                    </li>
+                                    <li>
+                                        <span>Би кокос</span>
+                                        <img class="material-img" src="img/icon-bicos.png" alt="">
+                                    </li>
+                                    <li>
+                                        <span>Бязь</span>
+                                        <img class="material-img" src="img/icon-bjaz.png" alt="">
+                                    </li>
+                                    <li>
+                                        <span>Холофайбер</span>
+                                        <img class="material-img" src="img/icon-holofajber.png" alt="">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="showcase-description">Двусторонний матрасс, изготовлен без применения клея.Иногда
+                                текст-«рыба» также используется композиторами при написании музыки.
+                            </div>
+                            <div class="clearfix">
+                                <div class="price"><span>Цена:</span> 2300 руб.</div>
+                                <button type="submit" class="btn btn-order">Заказать матрас</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Матрас Золотко -->
+                <div class="showcase showcase-female">
+                    <form class="showcase-form clearfix">
+                        <div class="showcase-left">
+                            <div class="showcase-img">
+                                <img class="male-img" src="img/product/zolotko.jpg" alt="">
+                                <span class="showcase-present"></span>
+                            </div>
+                            <div class="gender">
+                                <div class="gender-title">Выберите пол ребенка:</div>
+                                <div class="clearfix"></div>
+                                <input id="radio61"  type="radio" name="gender" value="мальчика">
+                                <label for="radio61" class="radio-male">для мальчика</label>
+                                <input id="radio62" type="radio" name="gender" value="девочка" checked>
+                                <label for="radio62"class="radio-female" >для девочки</label>
+                            </div>
+                        </div>
+                        <div class="showcase-right">
+                            <div class="showcase-title clearfix">
+                                <div class="left-col">
+                                    <h4>Золотко</h4>
+                                    <p>Высота матраса: <span>12см</span></p>
+                                </div>
+                                <div class="right-col">Размеры(см):<span>90x120; 60x100</span></div>
+                            </div>
+                            <div class="showcase-material">
+                                <span class="material-title">Используемые материалы:</span>
+                                <ul class="clearfix">
+                                    <li>
+                                        <span>Кокосовая койра</span>
+                                        <img class="material-img" src="img/icon-cocos.png" alt="">
+                                    </li>
+                                    <li>
+                                        <span>Натуральный латекс</span>
+                                        <img class="material-img" src="img/icon-latex.png" alt="">
+                                    </li>
+                                    <li>
+                                        <span>Би кокос</span>
+                                        <img class="material-img" src="img/icon-bicos.png" alt="">
+                                    </li>
+                                    <li>
+                                        <span>Бязь</span>
+                                        <img class="material-img" src="img/icon-bjaz.png" alt="">
+                                    </li>
+                                    <li>
+                                        <span>Холофайбер</span>
+                                        <img class="material-img" src="img/icon-holofajber.png" alt="">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="showcase-description">Двусторонний матрасс, изготовлен без применения клея.Иногда
+                                текст-«рыба» также используется композиторами при написании музыки.
+                            </div>
+                            <div class="clearfix">
+                                <div class="price"><span>Цена:</span> 2300 руб.</div>
+                                <button type="submit" class="btn btn-order">Заказать матрас</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="text">Не нашли матрас под размер Вашей кроватки?</div>
+                <h3>Изготовим матрас для малыша по индивидуальным размерам!</h3>
             </div>
         </section>
         <section class="block06">
@@ -272,6 +642,26 @@
                 </ul>
             </div>
         </footer>
+
+        <popup>
+            <div class="form-block" id="callback">
+                <div class="form-title">Форма заявки на покупку матраса</div>
+                <form enctype="multipart/form-data" method="post" class="cform mini form">
+                    <ol class="cf-ol">
+                        <li>
+                            <input type="text" name="cf8_field_1" class="single" value="Введите Ваше имя" onfocus="clearField(this)" onblur="setField(this)"/>
+                        </li>
+                        <li>
+                            <input type="text" name="cf8_field_2" class="single fldrequired" value="Введите Ваш телефон" onfocus="clearField(this)" onblur="setField(this)"/>
+                            <input type="hidden" name="cf8_field_2_regexp" value="^[+]?[-0-9\(\) ]{10,20}$"/>
+                        </li>
+                    </ol>
+                    <p class="cf-sb">
+                        <input type="submit" name="sendbutton8" class="sendbutton" value="Оставить заявку" onclick="return cforms_validate('8', false)"/>
+                    </p>
+                </form>
+            </div>
+        </popup>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>

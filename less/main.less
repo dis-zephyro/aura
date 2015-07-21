@@ -355,8 +355,264 @@ html {
 }
 
 .block05 {
+	padding: 40px 0;
 	min-height: 4145px;
 	background: url("../img/b05_bg.jpg") bottom center no-repeat;
+
+	h2 {
+		margin-bottom: 30px;
+	}
+
+	.text {
+		font-size: 30px;
+		line-height: 30px;
+		text-align: center;
+		padding-top: 50px;
+		font-family: @font-regular;
+	}
+
+	h3 {
+		color: #494949;
+		font-size: 36px;
+		line-height: 40px;
+		text-align: center;
+		font-family: @font-bold;
+	}
+
+	.showcase {
+		background: #fff;
+		margin: 0 -15px 25px -15px;
+		padding: 50px 15px 40px 15px;
+		.box-shadow(0px 0px 30px 0px rgba(0, 0, 0, 0.1));
+
+		.showcase-left {
+			float: left;
+			width: 380px;
+		}
+
+		.showcase-right {
+			float: right;
+			width: 525px;
+		}
+
+		.showcase-img {
+			width: 380px;
+			position: relative;
+			margin-bottom: 20px;
+
+			.showcase-present {
+				top: 0;
+				left: 100px;
+				width: 125px;
+				height: 125px;
+				position: absolute;
+				background: url("../img/icon-present.png") 0 0 no-repeat;
+			}
+		}
+
+		.gender-title {
+			font-size: 18px;
+			line-height: 20px;
+			text-align: center;
+			margin-bottom: 15px;
+			font-family: @font-bold;
+		}
+
+		.gender {
+			margin-left: 40px;
+			text-align: center;
+
+			label {
+				color: #707577;
+				width: 120px;
+				margin: 0 15px;
+				cursor: pointer;
+				font-size: 18px;
+				padding-top: 80px;
+				line-height: 20px;
+				position: relative;
+				display: inline-block;
+				font-family: @font-extra;
+
+				&:before {
+					top: 0;
+					left: 50%;
+					opacity: .5;
+					content: "";
+					width: 65px;
+					height: 65px;
+					margin-left: -32px;
+					position: absolute;
+					display: inline-block;
+				}
+
+				&.radio-male {
+					
+					&:before {
+						background: url("../img/icon-male.png") 0 0 no-repeat;
+					}
+				}
+
+				&.radio-female {
+
+					&:before {
+						background: url("../img/icon-female.png") 0 0 no-repeat;
+					}
+				}
+			}
+
+			input[type=radio] {
+				display: none;
+			}
+
+			input[type=radio]:checked + label {
+
+				&:before {
+					opacity: 1;
+				}
+
+				&.radio-male {
+					color: #69c0f4;
+					font-family: @font-bold;
+				}
+
+				&.radio-female {
+					color: #f88dc6;
+					font-family: @font-bold;
+				}
+			}
+		}
+
+		.showcase-title {
+			color: #545e63;
+			margin-bottom: 10px;
+			margin-bottom: 30px;
+			text-transform: uppercase;
+			border-bottom: 1px solid #dddfe0;
+
+			.left-col {
+				float: left;
+				width: 300px;
+
+				h4 {
+					font-size: 24px;
+					line-height: 24px;
+					font-family: @font-heavy;
+				}
+
+				p {
+					font-size: 18px;
+					line-height: 22px;
+					font-family: @font-bold;
+
+					span {
+						font-family: @font-bold;
+					}
+				}
+			}
+
+			.right-col {
+				float: right;
+				width: 200px;
+				font-size: 18px;
+				line-height: 22px;
+				font-family: @font-heavy;
+
+				span {
+					display: block;
+					font-family: @font-bold;
+				}
+			}
+		}
+
+		.showcase-material {
+
+			.material-title {
+				display: block;
+				font-size: 18px;
+				line-height: 24px;
+				margin-bottom: 20px;
+				font-family: @font-heavy;
+				text-transform: uppercase;
+			}
+
+			ul {
+				padding-bottom: 15px;
+			}
+
+			li {
+				float: left;
+				width: 50%;
+				height: 60px;
+				display: table;
+				padding-left: 85px;
+				margin-bottom: 10px;
+				position: relative;
+
+				span {
+					height: 60px;
+					font-size: 18px;
+					line-height: 18px;
+					display: table-cell;
+					vertical-align: middle;
+				}
+
+				.material-img {
+					left: 0;
+					top: 0;
+					display: block;
+					position: absolute;
+				}
+			}
+		}
+
+		.showcase-description {
+			padding: 15px 0;
+			font-size: 16px;
+			line-height: 18px;
+			font-style: italic;
+			margin-bottom: 10px;
+			font-family: @font-extra;
+			border-top: 1px solid #dddfe0;
+			border-bottom: 1px solid #dddfe0;
+		}
+
+		.price {
+			float: left;
+			width: 215px;
+			font-size: 30px;
+			line-height: 60px;
+			font-family: @font-heavy;
+
+			span {
+				font-size: 18px;
+				font-family: @font-bold;
+			}
+		}
+
+		.btn-order {
+			width: 306px;
+			float: left;
+		}
+
+		&.showcase-female {
+
+			.showcase-img {
+
+				.showcase-present {
+					background-position: 0 -125px;
+				}
+			}
+
+			.btn-order {
+				background: #f5b5d7;
+
+				&:hover {
+					background: #f291c5;
+				}
+			}
+		}
+	}
 }
 
 .block06 {
@@ -609,6 +865,18 @@ html {
 
 		&:hover {
 			background: #f291c5;
+		}
+	}
+
+	&.btn-order {
+		font-size: 24px;
+		line-height: 40px;
+		padding: 10px;
+		background: #92d2f8;
+		text-transform: uppercase;
+
+		&:hover {
+			background: #77c5f4;
 		}
 	}
 }
