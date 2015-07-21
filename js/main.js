@@ -24,3 +24,21 @@ $(document).ready(function() {
 $(".btn-callback, .btn-popup").fancybox({
     "padding" : 0
 });
+
+
+// Радиокнопки
+
+
+$('.radio-male').click(function() {
+    var box = $(this).closest('.showcase');
+    box.removeClass('showcase-female') ;
+    console.log('showcase-female delete');
+});
+
+$('.radio-female').click(function() {
+    var box = $(this).closest('.showcase');
+    box.addClass('showcase-female') ;
+    console.log('showcase-female add');
+});
+
+
