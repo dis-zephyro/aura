@@ -41,4 +41,35 @@ $('.radio-female').click(function() {
     console.log('showcase-female add');
 });
 
+/*
+function getFotm() {
+    var place = $(this).closest('.showcase');
+    var gender = place.find('input[type="radio"]:checked');
+    var genderValue = gender.val();
+
+    console.log(place);
+    console.log(gender);
+    console.log(genderValue);
+}
+*/
+
+$('.btn-order').click(function(event) {
+    event.preventDefault();
+
+    var place = $(this).closest('.showcase');
+    var product = 'Матрас ' + place.find('input[name="showcase-name"]').val();
+    var gender = 'для ' + place.find('input[type="radio"]:checked').val();
+
+    console.log(product);
+    console.log(gender);
+
+    $('input[name="cf8_field_1"]').attr('value', product);
+    $('input[name="cf8_field_2"]').attr('value', gender);
+
+    $.fancybox.open({
+        type: 'inline',
+        href: '#order'
+    });
+
+});
 
